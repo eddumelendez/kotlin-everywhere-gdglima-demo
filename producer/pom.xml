@@ -97,6 +97,11 @@
                 <artifactId>spring-cloud-contract-maven-plugin</artifactId>
                 <version>2.2.0.M2</version>
                 <extensions>true</extensions>
+                <configuration>
+                    <testFramework>JUNIT5</testFramework>
+                    <testMode>WEBTESTCLIENT</testMode>
+                    <baseClassForTests>com.example.producer.base.BaseContractTest</baseClassForTests>
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.springframework.cloud</groupId>
